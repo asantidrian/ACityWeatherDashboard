@@ -42,5 +42,5 @@ Server-Side API - OpenWeather API
 
 ## Contact
 Email: asantidrian83@gmail.com  
-Project link: https://github.com/asantidrian/CityWeatherDashboard  
-Website link: https://asantidrian.github.io/CityWeatherDashboard/
+Project link: https://github.com/asantidrian/ACityWeatherDashboard  
+Website link: https://asantidrian.github.io/ACityWeatherDashboard/
