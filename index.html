@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <title>Weather City Dashboard</title>
+</head>
+
+<div class="card">
+    <div class="card-header row justify-content-center" style="background-color:#1D8599">
+        <h1 class="p-3 font-weight-bold text-light"> City Weather Dashboard</h1>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card border-0">
+                    <form id="city-search-form" class="row mx-2">
+                        <div class="col-md-12 py-2 ">
+                            <label for="City" class="form-label">
+                                <h2>Search for a City</h2>
+                            </label>
+                            <input type="text" class="form-control" id="city-input" required>
+                        </div>
+                        <div class="col-12">
+                        </div>
+                        <div class="col-md-12">
+                            <button id="search-btn" type="submit" style=background-color:#53C6DC
+                                class="btn  btn-block my-2">Search</button>
+                        </div>
+                    </form>
+                    <div class="row mx-2 ">
+                        <div id="city-btn" class="col-md-12 border-top border-dark">
+                            <button class="btn btn-secondary btn-block my-2" type="click">Madrid</button>
+                            <button class="btn btn btn-secondary btn-block my-2" type="click">Gold Coast</button>
+                            <button class="btn btn btn-secondary btn-block my-2" type="click">Sydney</button>
+                            <button class="btn btn btn-secondary btn-block my-2" type="click">San Sebastian</button>
+                            <button class="btn btn btn-secondary btn-block my-2" type="click">San Francisco</button>
+                            <button class="btn btn btn-secondary btn-block my-2" type="click">Tokio</button>
+                            <button class="btn btn btn-secondary btn-block my-2" type="click">Lisbon</button>
+                            <button class="btn btn btn-secondary btn-block my-2" type="click">Florence</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">City:<span id="city-searched"></span><span id="weather-icon"></span></h2>
+                        <p class="card-text">Temp: <span id="temp"></span></p>
+                        <p class="card-text">Wind: <span id="wind"></span></p>
+                        <p class="card-text">Humidity: <span id="humidity"></span></p>
+                        <p class="card-text">UV Index: <span id="UV-index"></span></p>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <h3 class="card-title my-2 mt-3">5 Days Forecast: </h3>
+                    <div id="forecast-weather" class="row gx-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</main>
+
+</html>
